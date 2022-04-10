@@ -1,23 +1,53 @@
 import logo from './logo.svg';
 import './App.css';
+import Router from "./Router";
+import { ThemeProvider } from "@material-ui/styles";
+import { createTheme, AppBar, Toolbar, Typography, IconButton } from "@material-ui/core";
+import navBarLogo from './logo1200.png';
+import { makeStyles } from "@material-ui/styles";
+
+const theme = createTheme({
+  pallete: {
+    primary : {
+      main: "#000000"
+    },
+    secondary: {
+      main: "#ea1c2d"
+    }
+  }
+});
+
+const useStyles = makeStyles(theme => ({
+
+  navBar: {
+    // background: "#ea1c2d"
+    background: "#000000"
+  }
+
+}));
 
 function App() {
+  const classes = useStyles();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ThemeProvider theme={theme}>
+        <AppBar className={classes.navBar}>
+          <Toolbar>
+            <IconButton
+              edge="start"
+              aria-label="home"
+              sx={{ mr: 2 }}
+            >
+              <img style={{height: "55px", width: "55px"}} src={logo} />
+            </IconButton>
+            <Typography variant="h3" component="div" sx={{ flexGrow: 1 }}>
+              Garden State Performance
+            </Typography>
+          </Toolbar>
+        </AppBar>
+        <Router />
+      </ThemeProvider>
     </div>
   );
 }
