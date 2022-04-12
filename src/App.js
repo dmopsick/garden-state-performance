@@ -20,10 +20,9 @@ const theme = createTheme({
 const useStyles = makeStyles(theme => ({
 
   navBar: {
-    // background: "#ea1c2d"
     background: "#000000",
     paddingLeft: "0px"
-  }
+  },
 
 }));
 
