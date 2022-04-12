@@ -21,7 +21,8 @@ const useStyles = makeStyles(theme => ({
 
   navBar: {
     // background: "#ea1c2d"
-    background: "#000000"
+    background: "#000000",
+    paddingLeft: "0px"
   }
 
 }));
@@ -41,7 +42,7 @@ function App() {
             >
               <img style={{height: "55px", width: "55px"}} src={logo} />
             </IconButton>
-            <Typography variant="h3" component="div" sx={{ flexGrow: 1 }}>
+            <Typography variant="h5" component="div" sx={{ flexGrow: 2 }}>
               Garden State Performance
             </Typography>
           </Toolbar>

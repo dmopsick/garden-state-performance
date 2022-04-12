@@ -1,11 +1,15 @@
-import { withThemeCreator } from "@material-ui/styles"
-import GymTourVideo from "../video/gymTourVideo.mp4"
-import logo from '../logo.svg';
+import GymTourVideo from '../video/gymTourVideo.mp4';
+import Logo from '../logo.svg';
+import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
+import { Icon } from '@material-ui/core/Icon';
 
 
 export default function Home() {
     return (
-        <div>
+        <div style={{
+            background: "black",
+            color: "white"
+        }}>
             <video
                 autoPlay
                 loop
@@ -13,7 +17,8 @@ export default function Home() {
                 style={{
                     positon: "absolute",
                     width: "100%",
-                    height: "100%",
+                    // height: "100%",
+                    height: "750px",
                     //left: "50%",
                     objectFit: "cover",
                     // transform: "translate(-50%, -50%)",
@@ -23,27 +28,47 @@ export default function Home() {
                 >
                 <source src={GymTourVideo} type="video/mp4" />
             </video>
-            <img src={logo}
-                style={{
-                    top: "30%",
-                    left: "40%",
-                    zIndex: "100",
-                    position: "absolute"
-                }}
-            />
-
-            {/* <h2 style={{
-                top: "50%",
-                left: "45%",
+            <div style={{   
                 zIndex: "100",
-                background: "rgb(255, 255, 255, .7)",
-                position: "fixed",
-                padding: "10px"
-            }}>Hustle. Grit. Grind.</h2> */}
+                position: "absolute",
+                width: "100%",
+                top: "20%",
+                display: "flex",
+                flexWrap: "wrap",
+                justifyContent: "center",
+                alignContent: "center"
+                }}
+            >
+                <img src={Logo}
+                    style={{
+                        width: "50%",
+                        flexBasis: "20%"
+                    
+                    }}
+                />
 
-            <div style={{
-                height: "750px"
-            }}>Free Trial</div>
+                <a href="#signUp"
+                    style={{color: "white", flexBasis: "100%"}}>
+                        
+                    <ArrowDownwardIcon style={{fontSize: "96px"}} />
+                </a>
+               
+
+            </div>
+     
+        
+
+
+
+
+            <div id="signUp"
+                style={{
+                    height: "750px"
+                }}
+            >
+               <h1 style={{marginTop: "25px"}}>Sign Up</h1> 
+
+            </div>
         </div>
 
     )
