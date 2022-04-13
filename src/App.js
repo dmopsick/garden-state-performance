@@ -1,9 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import Router from "./Router";
 import { ThemeProvider } from "@material-ui/styles";
-import { createTheme, AppBar, Toolbar, Typography, IconButton } from "@material-ui/core";
-import navBarLogo from './logo1200.png';
+import { createTheme } from "@material-ui/core";
+import Header from "./components/Header";
 import { makeStyles } from "@material-ui/styles";
 
 const theme = createTheme({
@@ -17,35 +16,13 @@ const theme = createTheme({
   }
 });
 
-const useStyles = makeStyles(theme => ({
-
-  navBar: {
-    background: "#000000",
-    paddingLeft: "0px"
-  },
-
-}));
 
 function App() {
-  const classes = useStyles();
 
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-        <AppBar className={classes.navBar}>
-          <Toolbar>
-            <IconButton
-              edge="start"
-              aria-label="home"
-              sx={{ mr: 2 }}
-            >
-              <img style={{height: "55px", width: "55px"}} src={logo} />
-            </IconButton>
-            <Typography variant="h5" component="div" sx={{ flexGrow: 2 }}>
-              Garden State Performance
-            </Typography>
-          </Toolbar>
-        </AppBar>
+        <Header />
         <Router />
       </ThemeProvider>
     </div>

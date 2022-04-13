@@ -1,10 +1,29 @@
 import GymTourVideo from '../video/gymTourVideo.mp4';
 import Logo from '../logo.svg';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
+import { makeStyles } from "@material-ui/styles";
+
+const useStyles = makeStyles(theme => ({
+    infoList: {
+        textAlign: "left"
+    },
+
+    sectionHeader: {
+        fontSize: "56px"
+    },
+
+    section: {
+        paddingTop: "80px",
+        height: "800px"
+    }
+    
+}));
 
 export default function Home() {
+    const classes = useStyles();
+
     return (
-        <div 
+        <div
             style={{
                 background: "black",
                 color: "white"
@@ -19,6 +38,7 @@ export default function Home() {
                     width: "100%",
                     // height: "100%",
                     height: "800px",
+                    paddingTop: "80px",
                     //left: "50%",
                     objectFit: "cover",
                     zIndex: "-100",
@@ -55,13 +75,8 @@ export default function Home() {
             </div>
      
     
-            <div id="info"
-                style={{
-                    height: "750px",
-                    color: "white"
-                }}
-            >
-               <h1 style={{marginTop: "25px"}}>Hustle. Grit. Grind.</h1> 
+            <div id="info" className={classes.section}>
+               <h1 className={classes.sectionHeader}>Hustle. Grit. Grind.</h1> 
                <p>No matter what your fitness goals are, we have a program to help you get there..</p>
                 <div style={{ 
                     display: "flex",
@@ -73,7 +88,7 @@ export default function Home() {
                         }}
                     >
                         <h1>Athlete Training</h1>
-                        <ul>
+                        <ul className={classes.infoList}>
                             <li>Develop Power, Strength, and Speed</li>
                             <li>Learn Proper Movement Patterns to flourish athletically </li>
                             <li>Meet &amp; exceed the physical demands of your sport</li>
@@ -86,7 +101,7 @@ export default function Home() {
                         }}
                     >
                         <h1>Adult Fitness</h1>
-                        <ul>
+                        <ul className={classes.infoList}>
                             <li>Former athletes + Weekend Warriors... tap back into the athlete you once were!</li>
                             <li>Newbies... develop your goals and begin your fitness journey</li>
                             <li>Flexible scheduling allows for fitness to "fit" into almost any busy day</li>
@@ -94,8 +109,7 @@ export default function Home() {
                     </div>
                     <div 
                         style={{
-                            flexBasis: "100%",
-                            marginTop: "50px"
+                            flexBasis: "100%"
                         }}
                     >
                         <a href="#signUp" 
@@ -112,17 +126,14 @@ export default function Home() {
             </div>
 
             <div id="signUp"
+                className={classes.section}
                 style={{
-                    height: "750px",
-                    backgroundColor: "#ea1c2d",
-                    color: "white"
+                    backgroundColor: "#ea1c2d"
                 }}
             >
-                <h1
-                    style={{
-                        paddingTop: "50px"
-                    }}
-                >Get Involved</h1>
+                <h1 className={classes.sectionHeader}>
+                    Get Involved
+                </h1>
                 <p style={{
                     width: "80%",
                     margin: "auto"
@@ -134,7 +145,7 @@ export default function Home() {
                     How to Sign Up
                 </h1>
 
-                <ol>
+                <ol className={classes.infoList}>
                     <li>Apply for a Free Trial (2 Sessions)</li>
                     <li>After applying we will contact you to schedule your first session</li>
                     <li>We will sit down and discuss your goals and expectations for training</li>
