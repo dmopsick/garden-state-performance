@@ -1,6 +1,6 @@
-import { makeStyles } from "@material-ui/styles";
+import { makeStyles } from '@material-ui/styles';
 import Logo from '../logo.svg';
-import { AppBar, Toolbar, Typography, IconButton } from "@material-ui/core";
+import { AppBar, Toolbar, Typography, IconButton } from '@material-ui/core';
 
 
 
@@ -19,15 +19,17 @@ export default function Header() {
     return (
         <AppBar className={classes.navBar}>
             <Toolbar>
-                <IconButton
-                edge="start"
-                aria-label="home"
-                style={{
-                    marginRight: "10px"
-                }}
-                >
-                <img style={{height: "55px", width: "55px"}} src={Logo} />
-                </IconButton>
+                <a href ="/">
+                    <IconButton
+                        edge="start"
+                        aria-label="home"
+                        style={{
+                            marginRight: "10px"
+                        }}
+                    >
+                    <img style={{height: "55px", width: "55px"}} src={Logo} />
+                    </IconButton>
+                </a>
                 <Typography variant="h5" component="div" sx={{ flexGrow: 2 }}>
                     Garden State Performance
                 </Typography>
