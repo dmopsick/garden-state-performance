@@ -3,7 +3,6 @@ import Router from "./Router";
 import { ThemeProvider } from "@material-ui/styles";
 import { createTheme } from "@material-ui/core";
 import Header from "./components/Header";
-import { makeStyles } from "@material-ui/styles";
 
 const theme = createTheme({
   pallete: {
