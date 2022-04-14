@@ -1,4 +1,4 @@
-import { makeStyles } from '@mui/material/styles';
+import { makeStyles } from '@mui/styles';
 import Logo from '../logo.svg';
 import { AppBar, Toolbar, Typography, IconButton } from '@mui/material';
 
@@ -8,7 +8,8 @@ const useStyles = makeStyles(theme => ({
 
     navBar: {
         background: "#000000",
-        paddingLeft: "0px"
+        paddingLeft: "0px",
+        height: "80px"
     }
 
 }));
@@ -17,8 +18,8 @@ export default function Header() {
     const classes = useStyles();
 
     return (
-        <AppBar className={classes.navBar}>
-            <Toolbar>
+        <AppBar >
+            <Toolbar className={classes.navBar}>
                 <a href ="/">
                     <IconButton
                         edge="start"
@@ -27,7 +28,12 @@ export default function Header() {
                             marginRight: "10px"
                         }}
                     >
-                    <img style={{height: "55px", width: "55px"}} src={Logo} />
+                    <img 
+                        style={{
+                            height: "55px", 
+                            width: "55px"}} 
+                        src={Logo}
+                        alt="Garden State Performance Logo" />
                     </IconButton>
                 </a>
                 <Typography variant="h5" component="div" sx={{ flexGrow: 2 }}>
