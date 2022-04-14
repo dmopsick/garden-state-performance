@@ -4,6 +4,7 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import { makeStyles } from '@mui/styles';
 import AddIcon from '@mui/icons-material/Add';
 import EmailIcon from '@mui/icons-material/Email';
+import { maxWidth } from '@mui/system';
 
 const useStyles = makeStyles(theme => ({
     movingArrow: {
@@ -45,7 +46,7 @@ const useStyles = makeStyles(theme => ({
     homeContainer: {
         color: "white",
         background: "black",
-        textAlign: "center"
+        textAlign: "center"  
     },
 
     link: {
@@ -183,6 +184,20 @@ export default function Home() {
 
                     <p className={classes.bodyText}>Can't make it to the gym? Join the <a className={classes.link} target="_blank" rel="noreferrer" href="https://forms.gle/focuC3RcTgeg2TBJ6">Garden State Performance Email List <EmailIcon /></a> and connect with us on social media!</p>
 
+                    <div style={{
+                        width: "98%",
+                        margin: "auto",
+                        maxWidth: "500px",
+                        marginTop: "10px"
+                    }}>
+
+                        <iframe width="85%" height="230" src="https://www.youtube.com/embed/1K--JPaEq8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               
+                    </div>
+                  
+
+
+                 
                 </div>
 
             </div>

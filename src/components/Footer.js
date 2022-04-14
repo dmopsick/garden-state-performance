@@ -25,7 +25,7 @@ export default function Footer() {
         <div style={{
             background: "black",
             color: "white",
-            height: "150px",
+            height: "200px",
             paddingTop: "10px",
             paddingBottom: "20px",
             textAlign: "center"
@@ -70,7 +70,7 @@ export default function Footer() {
                                 <FacebookIcon fontSize='large' />
                             </a>
                     </div>
-                
+
             </div>
             <hr />
             <p>
@@ -80,13 +80,10 @@ export default function Footer() {
                     }}
                 >GardenStatePerf@gmail.com </a>
                 •
-                732-245-7494
+                732-245-7494 
             </p>
             <p>
                 1701 Valley Road Unit E, Ocean, NJ 07712
-            </p>
-            <p>
-                Est. 2022
             </p>
             <hr />
         

@@ -22,9 +22,6 @@ export default function Header() {
                     <IconButton
                         edge="start"
                         aria-label="home"
-                        style={{
-                            marginRight: "10px"
-                        }}
                     >
                     <img 
                         style={{
@@ -34,7 +31,7 @@ export default function Header() {
                         alt="Garden State Performance Logo" />
                     </IconButton>
                 </a>
-                <Typography variant="h5" component="div" sx={{ flexGrow: 2 }}>
+                <Typography variant="h6" component="div" sx={{ flexGrow: 2 }}>
                     Garden State Performance
                 </Typography>
              </Toolbar>
