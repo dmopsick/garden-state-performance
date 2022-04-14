@@ -7,7 +7,7 @@ import EmailIcon from '@mui/icons-material/Email';
 
 const useStyles = makeStyles(theme => ({
     movingArrow: {
-        animation: "arrow-jump 2s infinite",
+        animation: "arrow-jump 1s infinite",
         color: "skyblue"
     },
 
@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
         textAlign: "left",
         width: "85%",
         margin: "auto",
-        fontSize: "20px"
+        fontSize: "18px"
     },
 
     infoListItem: {
@@ -32,17 +32,17 @@ const useStyles = makeStyles(theme => ({
     },
 
     sectionCaption: {
-        fontSize: "24px",
+        fontSize: "22px",
         width: "90%",
         margin: "auto",
-        marginTop: "10px",
-        marginBottom: "25px",
+        marginTop: "15px",
+        marginBottom: "15px",
         fontFamily: "Varta"
     },
 
     section: {
         paddingTop: "80px",
-        height: "800px"
+        height: "825px"
     },
 
     homeContainer: {
@@ -192,7 +192,7 @@ export default function Home() {
                         width: "98%",
                         margin: "auto",
                         maxWidth: "500px",
-                        marginTop: "10px"
+                        marginTop: "20px"
                     }}>
 
                         <iframe width="85%" height="200" src="https://www.youtube.com/embed/1K--JPaEq8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

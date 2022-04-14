@@ -12,7 +12,8 @@ const useStyles = makeStyles(theme => ({
 
     header: {
         fontFamily: "Bebas Neue !important",
-        fontWeight: "bold !important"
+        fontWeight: "bold !important",
+        fontSize: "28px"
     }
 
 }));
@@ -28,7 +29,7 @@ export default function Header() {
                         edge="start"
                         aria-label="home"
                         style={{
-                            marginRight: "10px"
+                            marginRight: "5px"
                         }}
                     >
                     <img 
@@ -39,9 +40,9 @@ export default function Header() {
                         alt="Garden State Performance Logo" />
                     </IconButton>
                 </a>
-                <Typography className={classes.header} variant="h4" component="div" sx={{ flexGrow: 2 }}>
+                <div className={classes.header}>
                     Garden State Performance
-                </Typography>
+                </div>
              </Toolbar>
         </AppBar>
     )
