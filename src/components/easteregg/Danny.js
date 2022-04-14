@@ -35,6 +35,7 @@ export default function Danny() {
                     height: "500px"
                 }} 
                 src={DannyImage} 
+                alt="Danyell Image"
             /> 
 
             </div>
