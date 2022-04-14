@@ -1,7 +1,7 @@
 import GymTourVideo from '../video/gymTourVideo.mp4';
 import Logo from '../logo.svg';
-import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
-import { makeStyles } from "@material-ui/styles";
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import { makeStyles } from '@mui/material/styles';
 
 const useStyles = makeStyles(theme => ({
     infoList: {
