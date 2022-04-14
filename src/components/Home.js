@@ -6,6 +6,11 @@ import AddIcon from '@mui/icons-material/Add';
 import EmailIcon from '@mui/icons-material/Email';
 
 const useStyles = makeStyles(theme => ({
+    movingArrow: {
+        animation: "arrow-jump 2s infinite",
+        color: "skyblue"
+    },
+
     infoList: {
         textAlign: "left",
         width: "85%",
@@ -39,7 +44,8 @@ const useStyles = makeStyles(theme => ({
 
     homeContainer: {
         color: "white",
-        background: "black"
+        background: "black",
+        textAlign: "center"
     },
 
     link: {
@@ -97,7 +103,7 @@ export default function Home() {
                     <a href="#info"
                         style={{color: "white", flexBasis: "100%"}}>
                             
-                        <ArrowDownwardIcon style={{fontSize: "96px"}} />
+                        <ArrowDownwardIcon className={classes.movingArrow}  style={{fontSize: "96px"}} />
                     </a>
                 
                 </div>
@@ -116,11 +122,11 @@ export default function Home() {
                         <div className={classes.bodyText}>
                             <h1>Athlete Training</h1>
                             <ul className={classes.infoList}>
-                                <li>Develop Power, Strength, and Speed for your Sport</li>
-                                <li>Learn the proper movement patterns for athletic efficiency and performance</li>
-                                <li>Transfer strength and speed training to the field, court, mats, wherever you compete</li>
-                                <li>Develop confidence and self-reliance in a competitive environment</li>
-                                <li>Become battle-tested in your off-seasons to be ready for the main event</li>
+                                <li className={classes.infoListItem}>Develop Power, Strength, and Speed for your Sport</li>
+                                <li className={classes.infoListItem}>Learn the proper movement patterns for athletic efficiency and performance</li>
+                                <li className={classes.infoListItem}>Transfer strength and speed training to the field, court, mats, wherever you compete</li>
+                                <li className={classes.infoListItem}>Develop confidence and self-reliance in a competitive environment</li>
+                                <li className={classes.infoListItem}>Become battle-tested in your off-seasons to be ready for the main event</li>
                             </ul>
                         </div>
 
@@ -134,7 +140,7 @@ export default function Home() {
                                     color: "white"
                                 }}
                             >
-                                <h1>Sign Up <ArrowDownwardIcon fontSize="large" /></h1>
+                                <h1>Sign Up <ArrowDownwardIcon className={classes.movingArrow} fontSize="large" /></h1>
                             </a>
 
                         </div>
@@ -160,10 +166,10 @@ export default function Home() {
                     </h1>
 
                     <ol className={classes.infoList}>
-                        <li>Apply for a Free Trial (2 Sessions)</li>
-                        <li>After applying we will contact you to schedule your first session</li>
-                        <li>We will sit down and discuss your goals and expectations for training</li>
-                        <li>After the two sessions, if we are a good fit for each other you choose a membership option</li>
+                        <li className={classes.infoListItem}>Apply for a Free Trial (2 Sessions)</li>
+                        <li className={classes.infoListItem}>After applying we will contact you to schedule your first session</li>
+                        <li className={classes.infoListItem}>We will sit down and discuss your goals and expectations for training</li>
+                        <li className={classes.infoListItem}>After the two sessions, if we are a good fit for each other you choose a membership option</li>
                     </ol>
 
                     <a 

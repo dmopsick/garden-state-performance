@@ -2,8 +2,6 @@ import { makeStyles } from '@mui/styles';
 import Logo from '../logo.svg';
 import { AppBar, Toolbar, Typography, IconButton } from '@mui/material';
 
-
-
 const useStyles = makeStyles(theme => ({
 
     navBar: {
