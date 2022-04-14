@@ -27,7 +27,9 @@ const useStyles = makeStyles(theme => ({
         fontSize: "56px",
         margin: "auto",
         textAlign: "center",
-        width: "98%"
+        width: "98%",
+        fontFamily: "Bebas Neue !important",
+        fontWeight: "bold !important"
     },
 
     sectionCaption: {
@@ -35,7 +37,8 @@ const useStyles = makeStyles(theme => ({
         width: "90%",
         margin: "auto",
         marginTop: "10px",
-        marginBottom: "25px"
+        marginBottom: "25px",
+        fontFamily: "Varta"
     },
 
     section: {
@@ -50,12 +53,14 @@ const useStyles = makeStyles(theme => ({
     },
 
     link: {
-        color: "skyblue"
+        color: "skyblue",
+        fontFamily: "Varta"
     },
 
     bodyText: {
         margin: "auto",
-        width: "85%"
+        width: "85%",
+        fontFamily: "Varta"
     }
     
 }));
@@ -191,7 +196,7 @@ export default function Home() {
                         marginTop: "10px"
                     }}>
 
-                        <iframe width="85%" height="230" src="https://www.youtube.com/embed/1K--JPaEq8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="85%" height="200" src="https://www.youtube.com/embed/1K--JPaEq8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                
                     </div>
                   
