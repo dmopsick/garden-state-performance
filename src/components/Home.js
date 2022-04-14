@@ -4,7 +4,6 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import { makeStyles } from '@mui/styles';
 import AddIcon from '@mui/icons-material/Add';
 import EmailIcon from '@mui/icons-material/Email';
-import { maxWidth } from '@mui/system';
 
 const useStyles = makeStyles(theme => ({
     movingArrow: {
