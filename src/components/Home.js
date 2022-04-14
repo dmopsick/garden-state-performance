@@ -3,14 +3,33 @@ import Logo from '../logo.svg';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import { makeStyles } from '@mui/styles';
 import AddIcon from '@mui/icons-material/Add';
+import EmailIcon from '@mui/icons-material/Email';
 
 const useStyles = makeStyles(theme => ({
     infoList: {
-        textAlign: "left"
+        textAlign: "left",
+        width: "85%",
+        margin: "auto",
+        fontSize: "20px"
+    },
+
+    infoListItem: {
+        marginBottom: "5px"
     },
 
     sectionHeader: {
-        fontSize: "56px"
+        fontSize: "56px",
+        margin: "auto",
+        textAlign: "center",
+        width: "98%"
+    },
+
+    sectionCaption: {
+        fontSize: "24px",
+        width: "90%",
+        margin: "auto",
+        marginTop: "10px",
+        marginBottom: "25px"
     },
 
     section: {
@@ -21,6 +40,15 @@ const useStyles = makeStyles(theme => ({
     homeContainer: {
         color: "white",
         background: "black"
+    },
+
+    link: {
+        color: "skyblue"
+    },
+
+    bodyText: {
+        margin: "auto",
+        width: "85%"
     }
     
 }));
@@ -78,16 +106,14 @@ export default function Home() {
         
             <div id="info" className={classes.section}>
                 <h1 className={classes.sectionHeader}>Hustle. Grit. Grind.</h1> 
-                <p>Any athlete. Any goal. You just got to do the <em>work</em></p>
+                <p className={classes.sectionCaption}>Any athlete. Any goal. You just got to do the <em>work</em></p>
+                    
                     <div style={{ 
                         display: "flex",
                         flexWrap: "wrap"
                     }}>
-                        <div 
-                            style={{
-                                flexBasis: "100%"
-                            }}
-                        >
+
+                        <div className={classes.bodyText}>
                             <h1>Athlete Training</h1>
                             <ul className={classes.infoList}>
                                 <li>Develop Power, Strength, and Speed for your Sport</li>
@@ -124,11 +150,8 @@ export default function Home() {
                     <h1 className={classes.sectionHeader}>
                         Get Involved
                     </h1>
-                    <p 
-                        style={{
-                            width: "80%",
-                            margin: "auto"
-                        }}>
+
+                    <p className={classes.sectionCaption}>
                         Let's get to work!
                     </p>
 
@@ -143,11 +166,16 @@ export default function Home() {
                         <li>After the two sessions, if we are a good fit for each other you choose a membership option</li>
                     </ol>
 
-                    <a target="_blank" rel="noreferrer" href="https://forms.gle/nCCYsZVZ9rqEucBc9">
+                    <a 
+                        target="_blank" 
+                        rel="noreferrer" 
+                        href="https://forms.gle/nCCYsZVZ9rqEucBc9"
+                        className={classes.link}
+                    >
                         <h1>Start Free Trial <AddIcon fontSize='large' /></h1>
                     </a>
 
-                    <p>Can't make it to the gym? Join the <a target="_blank" rel="noreferrer" href="https://forms.gle/focuC3RcTgeg2TBJ6">Garden State Performance Email List</a> and connect with us on social media!</p>
+                    <p className={classes.bodyText}>Can't make it to the gym? Join the <a className={classes.link} target="_blank" rel="noreferrer" href="https://forms.gle/focuC3RcTgeg2TBJ6">Garden State Performance Email List <EmailIcon /></a> and connect with us on social media!</p>
 
                 </div>
 
