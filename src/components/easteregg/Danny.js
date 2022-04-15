@@ -10,7 +10,8 @@ const useStyles = makeStyles(theme => ({
 
     header: {
         width: "85%",
-        margin: "auto"
+        margin: "auto",
+        textAlign: "center"
     }
 
 
