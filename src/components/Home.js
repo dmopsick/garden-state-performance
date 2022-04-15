@@ -1,4 +1,4 @@
-import GymTourGif from '../images/gymTourVideo.gif';
+import GymTourVideo from '../video/gymTourVideo.mp4';
 import Logo from '../logo.svg';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import { makeStyles } from '@mui/styles';
@@ -64,7 +64,11 @@ export default function Home() {
     return (
         <div className={classes.homeContainer}>
             <div className={classes.section}>
-                <img
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
                     style={{
                         positon: "absolute",
                         width: "100%",
@@ -73,10 +77,9 @@ export default function Home() {
                         zIndex: "-100",
                         filter: "grayscale(100%)"
                     }}
-                    src={GymTourGif}
-                    alt="Gym Tour Background"
                 >
-                </img>
+                    <source src={GymTourVideo} type="video/mp4" />
+                </video>
                 <div style={{   
                     zIndex: "100",
                     position: "absolute",
