@@ -6,8 +6,8 @@ import Danyell from "./components/easteregg/Danny";
 export default function Router() {
   return (
     <Routes>
-      <Route exact path="/" element={<Home/>} />
-      <Route path="/danny" element={<Danyell />} />
+      <Route path="/" element={<Home/>} />
+      <Route path="topsecret/epic/danny" element={<Danyell />} />
     </Routes>
   );
 }
