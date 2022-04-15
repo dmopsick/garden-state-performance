@@ -47,10 +47,10 @@ export default function Header(props) {
                                 src={Logo}
                                 alt="Garden State Performance Logo" />
                             </IconButton>
+                            <div className={classes.header}>
+                                Garden State Performance
+                             </div>
                         </a>
-                        <div className={classes.header}>
-                            Garden State Performance
-                        </div>
                     </Toolbar>
                 </AppBar>
             </HideOnScroll>
