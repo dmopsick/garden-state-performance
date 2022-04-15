@@ -17,7 +17,9 @@ const useStyles = makeStyles(theme => ({
     header: {
         fontFamily: "Bebas Neue !important",
         fontWeight: "bold !important",
-        fontSize: "28px"
+        fontSize: "28px",
+        color: "white",
+        textDecoration: "none"
     }
 
 }));
@@ -32,7 +34,7 @@ export default function Header(props) {
             <HideOnScroll {...props}>
                 <AppBar>
                     <Toolbar className={classes.navBar}>
-                        <a href ="/">
+                        <a className={classes.header} href ="/">
                             <IconButton
                                 edge="start"
                                 aria-label="home"
@@ -40,16 +42,14 @@ export default function Header(props) {
                                     marginRight: "5px"
                                 }}
                             >
-                            <img 
-                                style={{
-                                    height: "55px", 
-                                    width: "55px"}} 
-                                src={Logo}
-                                alt="Garden State Performance Logo" />
+                                <img 
+                                    style={{
+                                        height: "55px", 
+                                        width: "55px"}} 
+                                    src={Logo}
+                                    alt="Garden State Performance Logo" />
                             </IconButton>
-                            <div className={classes.header}>
-                                Garden State Performance
-                             </div>
+                            Garden State Performance
                         </a>
                     </Toolbar>
                 </AppBar>
