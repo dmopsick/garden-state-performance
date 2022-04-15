@@ -4,6 +4,7 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import { makeStyles } from '@mui/styles';
 import AddIcon from '@mui/icons-material/Add';
 import EmailIcon from '@mui/icons-material/Email';
+import { Link } from "react-scroll";
 
 const useStyles = makeStyles(theme => ({
     movingArrow: {
@@ -100,11 +101,13 @@ export default function Home() {
                         }}
                     />
 
-                    <a href="#info"
+                    <Link to="info"
+                        smooth={true}
+                        duration={500}
                         style={{color: "white", flexBasis: "100%"}}>
                             
                         <ArrowDownwardIcon className={classes.movingArrow}  style={{fontSize: "96px"}} />
-                    </a>
+                    </Link>
                 
                 </div>
             </div>
@@ -134,14 +137,16 @@ export default function Home() {
                                 flexBasis: "100%"
                             }}
                         >
-                            <a href="#signUp" 
+                            <Link to="signUp" 
+                                smooth={true}
+                                duration={500}
                                 style={{
                                     textDecoration: "none",
                                     color: "white"
                                 }}
                             >
                                 <h1>Sign Up <ArrowDownwardIcon className={classes.movingArrow} fontSize="large" /></h1>
-                            </a>
+                            </Link>
 
                         </div>
                     </div>
