@@ -115,7 +115,7 @@ export default function Home() {
         
             <div id="info" className={classes.section}>
                 <h1 className={classes.sectionHeader}>Hustle. Grit. Grind.</h1> 
-                <p className={classes.sectionCaption}>Any athlete. Any goal. You just got to do the <em>work</em></p>
+                <p className={classes.sectionCaption}>Any athlete. Any goal. You've just got to do the <em>work</em></p>
                     
                     <div style={{ 
                         display: "flex",
@@ -163,7 +163,7 @@ export default function Home() {
                         Get Involved
                     </h1>
 
-                    <p className={classes.sectionCaption}>
+                    <p >
                         Let's get to work!
                     </p>
 
