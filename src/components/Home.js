@@ -41,7 +41,7 @@ const useStyles = makeStyles(theme => ({
     },
 
     section: {
-        paddingTop: "80px",
+        // paddingTop: "80px",
         height: "825px"
     },
 
@@ -155,7 +155,7 @@ export default function Home() {
                 <div id="signUp"
                     className={classes.section}
                     style={{
-                        backgroundColor: "#ea1c2d"
+                        backgroundColor: "#a7171a"
                     }}
                 >
                     <h1 className={classes.sectionHeader}>

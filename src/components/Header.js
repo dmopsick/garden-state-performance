@@ -1,13 +1,18 @@
 import { makeStyles } from '@mui/styles';
 import Logo from '../logo.svg';
-import { AppBar, Toolbar, IconButton } from '@mui/material';
+import { AppBar, Toolbar, IconButton, Slide } from '@mui/material';
+import CssBaseline from '@mui/material/CssBaseline';
+import React from 'react';
+import useScrollTrigger from '@mui/material/useScrollTrigger';
 
 const useStyles = makeStyles(theme => ({
 
     navBar: {
         background: "#000000",
-        paddingLeft: "0px",
-        height: "80px"
+        paddingRight: "0px !important",
+        height: "80px",
+        color: "white",
+        zIndex: "101"
     },
 
     header: {
@@ -18,32 +23,55 @@ const useStyles = makeStyles(theme => ({
 
 }));
 
-export default function Header() {
+export default function Header(props) {
     const classes = useStyles();
 
     return (
-        <AppBar >
-            <Toolbar className={classes.navBar}>
-                <a href ="/">
-                    <IconButton
-                        edge="start"
-                        aria-label="home"
-                        style={{
-                            marginRight: "5px"
-                        }}
-                    >
-                    <img 
-                        style={{
-                            height: "55px", 
-                            width: "55px"}} 
-                        src={Logo}
-                        alt="Garden State Performance Logo" />
-                    </IconButton>
-                </a>
-                <div className={classes.header}>
-                    Garden State Performance
-                </div>
-             </Toolbar>
-        </AppBar>
+     
+        <React.Fragment>
+            <CssBaseline />
+            <HideOnScroll {...props}>
+                <AppBar>
+                    <Toolbar className={classes.navBar}>
+                        <a href ="/">
+                            <IconButton
+                                edge="start"
+                                aria-label="home"
+                                style={{
+                                    marginRight: "5px"
+                                }}
+                            >
+                            <img 
+                                style={{
+                                    height: "55px", 
+                                    width: "55px"}} 
+                                src={Logo}
+                                alt="Garden State Performance Logo" />
+                            </IconButton>
+                        </a>
+                        <div className={classes.header}>
+                            Garden State Performance
+                        </div>
+                    </Toolbar>
+                </AppBar>
+            </HideOnScroll>
+
+        </React.Fragment>
+    
+
     )
+}
+
+export function HideOnScroll(props) {
+    const {children} = props;
+    
+    const trigger = useScrollTrigger({
+        target: window
+    });
+
+    return (
+        <Slide appear={false} direction="down" in={!trigger}>
+            {children}
+        </Slide>
+    );
 }
