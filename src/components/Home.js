@@ -26,9 +26,7 @@ const useStyles = makeStyles(theme => ({
         fontSize: "56px",
         margin: "auto",
         textAlign: "center",
-        width: "98%",
-        fontFamily: "Bebas Neue !important",
-        fontWeight: "bold !important"
+        width: "98%"
     },
 
     sectionCaption: {
@@ -36,12 +34,10 @@ const useStyles = makeStyles(theme => ({
         width: "90%",
         margin: "auto",
         marginTop: "15px",
-        marginBottom: "15px",
-        fontFamily: "Varta"
+        marginBottom: "15px"
     },
 
     section: {
-        // paddingTop: "80px",
         height: "825px"
     },
 
@@ -52,14 +48,12 @@ const useStyles = makeStyles(theme => ({
     },
 
     link: {
-        color: "skyblue",
-        fontFamily: "Varta"
+        color: "skyblue"
     },
 
     bodyText: {
         margin: "auto",
-        width: "85%",
-        fontFamily: "Varta"
+        width: "85%"
     }
     
 }));
@@ -155,7 +149,8 @@ export default function Home() {
                 <div id="signUp"
                     className={classes.section}
                     style={{
-                        backgroundColor: "#a7171a"
+                        backgroundColor: "#a7171a",
+                        height: "875px"
                     }}
                 >
                     <h1 className={classes.sectionHeader}>
@@ -194,9 +189,7 @@ export default function Home() {
                         maxWidth: "500px",
                         marginTop: "20px"
                     }}>
-
                         <iframe width="85%" height="200" src="https://www.youtube.com/embed/1K--JPaEq8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-               
                     </div>
                   
 

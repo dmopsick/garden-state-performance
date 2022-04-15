@@ -11,8 +11,7 @@ const useStyles = makeStyles(theme => ({
         background: "#000000",
         paddingRight: "0px !important",
         height: "80px",
-        color: "white",
-        zIndex: "101"
+        color: "white"
     },
 
     header: {
