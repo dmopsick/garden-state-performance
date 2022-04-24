@@ -163,19 +163,24 @@ export default function Home() {
                         Get Involved
                     </h1>
 
-                    <p >
-                        Let's get to work!
+                    <p>   
+                        <a target="_blank"
+                            rel="noreferrer"
+                            href="https://forms.gle/nCCYsZVZ9rqEucBc9"
+                            className={classes.link}>
+                                <em>GSP's Principles of Athleticism</em>
+                        </a>
                     </p>
 
                     <h1>
-                        How to Sign Up
+                        How to Become a Member
                     </h1>
 
                     <ol className={classes.infoList}>
-                        <li className={classes.infoListItem}>Apply for a Free Trial (2 Sessions)</li>
-                        <li className={classes.infoListItem}>After applying we will contact you to schedule your first session</li>
-                        <li className={classes.infoListItem}>We will sit down and discuss your goals and expectations for training</li>
-                        <li className={classes.infoListItem}>After the two sessions, if we are a good fit for each other you choose a membership option</li>
+                        <li className={classes.infoListItem}>Access the link below to receive the Principles of Athleticism article and schedule your FREE athletic assessment</li>
+                        <li className={classes.infoListItem}>We will reach out to you within 24 hours to schedule your session</li>
+                        <li className={classes.infoListItem}>At your session we will conduct a free athletic assessment based to guide your training </li>
+                        <li className={classes.infoListItem}> If we are a good fit for your training, we&#8217;ll get to work based on your assessment! It&#8217;s that simple. A program built for you to take your game to the next level </li>
                     </ol>
 
                     <a 
@@ -184,10 +189,10 @@ export default function Home() {
                         href="https://forms.gle/nCCYsZVZ9rqEucBc9"
                         className={classes.link}
                     >
-                        <h1>Start Free Trial <AddIcon fontSize='large' /></h1>
+                        <h1>Become a Member <AddIcon /></h1>
                     </a>
 
-                    <p className={classes.bodyText}>Can't make it to the gym? Join the <a className={classes.link} target="_blank" rel="noreferrer" href="https://forms.gle/focuC3RcTgeg2TBJ6">Garden State Performance Email List <EmailIcon /></a> and connect with us on social media!</p>
+                    <p className={classes.bodyText}>Can't make it to the gym? Join the <a className={classes.link} target="_blank" rel="noreferrer" href="https://forms.gle/focuC3RcTgeg2TBJ6">Garden State Performance Email List <EmailIcon fontSize='small' /></a> and connect with us on social media!</p>
 
                     <div style={{
                         width: "98%",
