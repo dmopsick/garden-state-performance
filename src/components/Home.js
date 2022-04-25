@@ -163,12 +163,16 @@ export default function Home() {
                         Get Involved
                     </h1>
 
-                    <p>   
+                    <p>  
+                    <em>GSP's Principles of Athleticism </em> -
                         <a target="_blank"
                             rel="noreferrer"
                             href="https://forms.gle/nCCYsZVZ9rqEucBc9"
-                            className={classes.link}>
-                                <em>GSP's Principles of Athleticism</em>
+                            className={classes.link}
+                            style={{
+                                marginLeft: "5px"
+                            }}>
+                                Get the Article <EmailIcon fontSize='small' />
                         </a>
                     </p>
 
@@ -177,9 +181,12 @@ export default function Home() {
                     </h1>
 
                     <ol className={classes.infoList}>
-                        <li className={classes.infoListItem}>Access the link below to receive the Principles of Athleticism article and schedule your FREE athletic assessment</li>
+                        <li className={classes.infoListItem}>Access the <a target="_blank"
+                            rel="noreferrer"
+                            href="https://forms.gle/nCCYsZVZ9rqEucBc9"
+                            className={classes.link}> link</a> below to receive the Principles of Athleticism article and schedule your FREE ATHLETIC ASSESSMENT</li>
                         <li className={classes.infoListItem}>We will reach out to you within 24 hours to schedule your session</li>
-                        <li className={classes.infoListItem}>At your session we will conduct a free athletic assessment based to guide your training </li>
+                        <li className={classes.infoListItem}>At your session we will conduct a free athletic assessment to guide your training </li>
                         <li className={classes.infoListItem}> If we are a good fit for your training, we&#8217;ll get to work based on your assessment! It&#8217;s that simple. A program built for you to take your game to the next level </li>
                     </ol>
 
@@ -192,7 +199,7 @@ export default function Home() {
                         <h1>Become a Member <AddIcon /></h1>
                     </a>
 
-                    <p className={classes.bodyText}>Can't make it to the gym? Join the <a className={classes.link} target="_blank" rel="noreferrer" href="https://forms.gle/focuC3RcTgeg2TBJ6">Garden State Performance Email List <EmailIcon fontSize='small' /></a> and connect with us on social media!</p>
+                    <p className={classes.bodyText}>Can&#8217;t make it to the gym? Join the <a className={classes.link} target="_blank" rel="noreferrer" href="https://forms.gle/focuC3RcTgeg2TBJ6">Garden State Performance Email List <EmailIcon fontSize='small' /></a> and connect with us on social media!</p>
 
                     <div style={{
                         width: "98%",
