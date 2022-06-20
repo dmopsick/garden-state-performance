@@ -143,11 +143,6 @@ export default function Home() {
                             </ul>
                         </div>
 
-                        <a className={classes.hoursLink} target="_blank" href="/resources/GSP-Summer-Hours-2022.pdf">
-                            Summer 2022 Hours
-                        </a>
-
-
                         <div style={{
                                 flexBasis: "100%"
                             }}
