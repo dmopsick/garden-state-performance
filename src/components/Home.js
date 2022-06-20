@@ -39,7 +39,7 @@ const useStyles = makeStyles(theme => ({
     },
 
     section: {
-        height: "825px"
+        height: "835px"
     },
 
     homeContainer: {
@@ -50,6 +50,12 @@ const useStyles = makeStyles(theme => ({
 
     link: {
         color: "skyblue"
+    },
+
+    hoursLink: {
+        color: "skyblue",
+        fontSize: "32px",
+        margin: "auto"
     },
 
     bodyText: {
@@ -108,6 +114,10 @@ export default function Home() {
                             
                         <ArrowDownwardIcon className={classes.movingArrow}  style={{fontSize: "96px"}} />
                     </Link>
+
+                    <a className={classes.hoursLink} target="_blank" href="/resources/GSP-Summer-Hours-2022.pdf">
+                        Summer 2022 Hours
+                    </a>
                 
                 </div>
             </div>
@@ -132,6 +142,11 @@ export default function Home() {
                                 <li className={classes.infoListItem}>Become battle-tested in your off-seasons to be ready for the main event</li>
                             </ul>
                         </div>
+
+                        <a className={classes.hoursLink} target="_blank" href="/resources/GSP-Summer-Hours-2022.pdf">
+                            Summer 2022 Hours
+                        </a>
+
 
                         <div style={{
                                 flexBasis: "100%"
@@ -164,7 +179,7 @@ export default function Home() {
                     </h1>
 
                     <p>  
-                    <em>GSP's Principles of Athleticism </em> -
+                        <em>GSP's Principles of Athleticism </em> -
                         <a target="_blank"
                             rel="noreferrer"
                             href="https://forms.gle/nCCYsZVZ9rqEucBc9"
