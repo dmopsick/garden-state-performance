@@ -61,6 +61,12 @@ const useStyles = makeStyles(theme => ({
     bodyText: {
         margin: "auto",
         width: "85%"
+    },
+
+    testimonialText: {
+        margin: "auto",
+        width: "90%",
+        marginBottom: "20px"
     }
     
 }));
@@ -167,44 +173,31 @@ export default function Home() {
                 >
                     <h1 className={classes.sectionHeader}>What Do the People Think of GSP?</h1>
 
-                    <p className={classes.bodyText}>
+                    <p className={classes.testimonialText}>
                         <em>
                             Great place to workout. My son is a football player who loves to workout here. Great people and awesome motivators. 
                             He has helped my son transform his body for football. Highly recommend this place. Shane is the best!
                         </em> - Jill Barnes
                     </p>
 
-                    <p className={classes.bodyText}>
+                    <p className={classes.testimonialText}>
                         <em>
                             You will not be disappointed in this gym at all. All three of my kids are members here and they absolutely love it.
                             My oldest son is now a freshmen in college on the Wrestling team lifting more then most on his team. GSP is 100% the reason for this. The BEST, go check them out.
                         </em> - Levies
                     </p>
 
-                    <p className={classes.bodyText}>
+                    <p className={classes.testimonialText}>
                         <em>
                             I&#8217;ve been to so many gyms and none compare to Garden State Performance. Every day is different and challenging and the results are awesome!
                         </em> - Esther
                     </p>
 
-                    <p className={classes.bodyText}>
+                    <p className={classes.testimonialText}>
                         <em>
                             GSP is welcoming place designed for all levels and ages. Work out at your own pace, increasing levels and timing each week. 
                             Challenging while gaining endurance and strength
                         </em> - OMT
-                    </p>
-
-                    <p>  
-                        <em>GSP's Principles of Athleticism </em> -
-                        <a target="_blank"
-                            rel="noreferrer"
-                            href="https://forms.gle/nCCYsZVZ9rqEucBc9"
-                            className={classes.link}
-                            style={{
-                                marginLeft: "5px"
-                            }}>
-                                Get the Article <EmailIcon fontSize='small' />
-                        </a>
                     </p>
 
                     <a 
