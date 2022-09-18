@@ -24,7 +24,7 @@ const useStyles = makeStyles(theme => ({
     },
 
     sectionHeader: {
-        fontSize: "56px",
+        fontSize: "48px",
         margin: "auto",
         textAlign: "center",
         width: "98%"
@@ -34,8 +34,8 @@ const useStyles = makeStyles(theme => ({
         fontSize: "22px",
         width: "90%",
         margin: "auto",
-        marginTop: "15px",
-        marginBottom: "15px"
+        marginTop: "8px",
+        marginBottom: "8px"
     },
 
     section: {
@@ -206,7 +206,7 @@ export default function Home() {
                         href="https://forms.gle/26EjLbeDkoVDGhU78"
                         className={classes.link}
                     >
-                        <h1>Become a Member <AddIcon /></h1>
+                        <h2>Become a Member <AddIcon /></h2>
                     </a>
 
                     <p className={classes.bodyText}>Can&#8217;t make it to the gym? Join the <a className={classes.link} target="_blank" rel="noreferrer" href="https://forms.gle/focuC3RcTgeg2TBJ6">Garden State Performance Email List <EmailIcon fontSize='small' /></a> and connect with us on social media!</p>
