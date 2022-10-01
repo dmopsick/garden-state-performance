@@ -3,7 +3,6 @@ import Logo from '../logo.svg';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import { makeStyles } from '@mui/styles';
 import AddIcon from '@mui/icons-material/Add';
-import EmailIcon from '@mui/icons-material/Email';
 import { Link } from "react-scroll";
 
 const useStyles = makeStyles(theme => ({
@@ -131,9 +130,8 @@ export default function Home() {
                 </div>
 
                 <div id="signUp"
-                    className='section'
+                    className='section redBackground'
                     style={{
-                        backgroundColor: "#a7171a",
                         height: "875px"
                     }}
                 >
@@ -178,7 +176,7 @@ export default function Home() {
                     >
                         <h2>Become a Member <AddIcon /></h2>
                     </a>
-                    
+
                 </div>
 
             </div>
