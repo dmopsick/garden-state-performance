@@ -4,6 +4,7 @@ import { AppBar, Toolbar, IconButton, Slide } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
 import React from 'react';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
+import SideNav from './SideNav';
 
 const useStyles = makeStyles(theme => ({
 
@@ -34,12 +35,14 @@ export default function Header(props) {
             <HideOnScroll {...props}>
                 <AppBar>
                     <Toolbar className={classes.navBar}>
+                        <SideNav />
                         <a className={classes.header} href ="/">
+                            Garden State Performance
                             <IconButton
                                 edge="start"
                                 aria-label="home"
                                 style={{
-                                    marginRight: "5px"
+                                    marginLeft: "5px"
                                 }}
                             >
                                 <img 
@@ -49,7 +52,6 @@ export default function Header(props) {
                                     src={Logo}
                                     alt="Garden State Performance Logo" />
                             </IconButton>
-                            Garden State Performance
                         </a>
                     </Toolbar>
                 </AppBar>
