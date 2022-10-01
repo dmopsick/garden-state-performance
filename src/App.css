@@ -21,3 +21,42 @@ h1, h2, h3, h4, h5, h5 {
 p, a, label, span, li {
   font-family: "Varta" !important;
 }
+
+.infoList {
+  text-align: left;
+  width: 85%;
+  margin: auto;
+  font-size: 18px;
+}
+
+.infoListItem {
+  margin-bottom: 5px;
+}
+
+.sectionHeader {
+  font-size: 48px;
+  margin: auto;
+  text-align: center;
+  width: 98%;
+}
+
+.sectionCaption {
+  font-size: 22px;
+  width: 90%;
+  margin: auto;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.section {
+  height: 835px;
+}
+
+.bodyText {
+  margin: auto;
+  width: 85%;
+}
+
+.link {
+  color: skyblue
+}

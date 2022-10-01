@@ -12,55 +12,16 @@ const useStyles = makeStyles(theme => ({
         color: "skyblue"
     },
 
-    infoList: {
-        textAlign: "left",
-        width: "85%",
-        margin: "auto",
-        fontSize: "18px"
-    },
-
-    infoListItem: {
-        marginBottom: "5px"
-    },
-
-    sectionHeader: {
-        fontSize: "48px",
-        margin: "auto",
-        textAlign: "center",
-        width: "98%"
-    },
-
-    sectionCaption: {
-        fontSize: "22px",
-        width: "90%",
-        margin: "auto",
-        marginTop: "8px",
-        marginBottom: "8px"
-    },
-
-    section: {
-        height: "835px"
-    },
-
     homeContainer: {
         color: "white",
         background: "black",
         textAlign: "center"  
     },
 
-    link: {
-        color: "skyblue"
-    },
-
     hoursLink: {
         color: "skyblue",
         fontSize: "32px",
         margin: "auto"
-    },
-
-    bodyText: {
-        margin: "auto",
-        width: "85%"
     },
 
     testimonialText: {
@@ -76,7 +37,7 @@ export default function Home() {
 
     return (
         <div className={classes.homeContainer}>
-            <div className={classes.section}>
+            <div className="section">
                 <video
                     autoPlay
                     loop
@@ -94,14 +55,14 @@ export default function Home() {
                     <source src={GymTourVideo} type="video/mp4" />
                 </video>
                 <div style={{   
-                    zIndex: "100",
-                    position: "absolute",
-                    width: "100%",
-                    top: "20%",
-                    display: "flex",
-                    flexWrap: "wrap",
-                    justifyContent: "center",
-                    alignContent: "center"
+                        zIndex: "100",
+                        position: "absolute",
+                        width: "100%",
+                        top: "20%",
+                        display: "flex",
+                        flexWrap: "wrap",
+                        justifyContent: "center",
+                        alignContent: "center"
                     }}
                 >
                     <img src={Logo}
@@ -109,14 +70,16 @@ export default function Home() {
                         style={{
                             width: "50%",
                             flexBasis: "20%"
-                        
                         }}
                     />
 
                     <Link to="info"
                         smooth={true}
                         duration={500}
-                        style={{color: "white", flexBasis: "100%"}}>
+                        style={{
+                            color: "white",
+                            flexBasis: "100%"
+                        }}>
                             
                         <ArrowDownwardIcon className={classes.movingArrow}  style={{fontSize: "96px"}} />
                     </Link>
@@ -125,23 +88,23 @@ export default function Home() {
             </div>
         
         
-            <div id="info" className={classes.section}>
-                <h1 className={classes.sectionHeader}>Movement. Strength. Performance.</h1> 
-                <p className={classes.sectionCaption}>Become a better human - a better athlete - a better player</p>
+            <div id="info" className='section'>
+                <h1 className='sectionHeader'>Movement. Strength. Performance.</h1> 
+                <p className='sectionCaption'>Become a better human - a better athlete - a better player</p>
                     
                     <div style={{ 
                         display: "flex",
                         flexWrap: "wrap"
                     }}>
 
-                        <div className={classes.bodyText}>
+                        <div className='bodyText'>
                             <h1>Training at GSP</h1>
-                            <ul className={classes.infoList}>
-                            <li className={classes.infoListItem}>Learn the proper movement patterns for athletic efficiency and performance</li>
-                                <li className={classes.infoListItem}>Develop Power, Strength, and Speed for your Sport</li>
-                                <li className={classes.infoListItem}>Explore the boundaries of your athleticism and express your full abilities</li>
-                                <li className={classes.infoListItem}>Develop confidence and self-reliance in a competitive environment</li>
-                                <li className={classes.infoListItem}>Become battle-tested in your off-seasons to be ready for the main event</li>
+                            <ul className='infoList'>
+                            <li className='infoListItem'>Learn the proper movement patterns for athletic efficiency and performance</li>
+                                <li className='infoListItem'>Develop Power, Strength, and Speed for your Sport</li>
+                                <li className='infoListItem'>Explore the boundaries of your athleticism and express your full abilities</li>
+                                <li className='infoListItem'>Develop confidence and self-reliance in a competitive environment</li>
+                                <li className='infoListItem'>Become battle-tested in your off-seasons to be ready for the main event</li>
                             </ul>
                         </div>
 
@@ -165,7 +128,7 @@ export default function Home() {
                 </div>
 
                 <div id="signUp"
-                    className={classes.section}
+                    className='section'
                     style={{
                         backgroundColor: "#a7171a",
                         height: "875px"
@@ -204,12 +167,12 @@ export default function Home() {
                         target="_blank" 
                         rel="noreferrer" 
                         href="https://forms.gle/26EjLbeDkoVDGhU78"
-                        className={classes.link}
+                        className='link'
                     >
                         <h2>Become a Member <AddIcon /></h2>
                     </a>
 
-                    <p className={classes.bodyText}>Can&#8217;t make it to the gym? Join the <a className={classes.link} target="_blank" rel="noreferrer" href="https://forms.gle/focuC3RcTgeg2TBJ6">Garden State Performance Email List <EmailIcon fontSize='small' /></a> and connect with us on social media!</p>
+                    <p className='bodyText'>Can&#8217;t make it to the gym? Join the <a className='link' target="_blank" rel="noreferrer" href="https://forms.gle/focuC3RcTgeg2TBJ6">Garden State Performance Email List <EmailIcon fontSize='small' /></a> and connect with us on social media!</p>
 
                     <div style={{
                         width: "98%",
