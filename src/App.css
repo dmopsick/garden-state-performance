@@ -40,6 +40,13 @@ p, a, label, span, li {
   width: 98%;
 }
 
+.sectionSubheader {
+  font-size: 32px;
+  margin: auto;
+  text-align: center;
+  width: 98%;
+}
+
 .sectionCaption {
   font-size: 22px;
   width: 90%;
@@ -52,15 +59,30 @@ p, a, label, span, li {
   height: 850px;
 }
 
+.longSection {
+  height: 1200px;
+}
+
 .bodyText {
   margin: auto;
   width: 85%;
 }
 
-.link {
+.largeBodyText {
+  margin: auto;
+  width: 85%;
+  font-size: 17px;
+}
+
+a {
   color: skyblue
 }
 
 .pageContainer {
-  margin-top: 80px;
+  padding-top: 100px;
+  color: white;
+}
+
+.redBackground {
+  background-color: #a7171a
 }
