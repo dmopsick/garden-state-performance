@@ -49,7 +49,7 @@ p, a, label, span, li {
 }
 
 .section {
-  height: 835px;
+  height: 850px;
 }
 
 .bodyText {
@@ -59,4 +59,8 @@ p, a, label, span, li {
 
 .link {
   color: skyblue
+}
+
+.pageContainer {
+  margin-top: 80px;
 }

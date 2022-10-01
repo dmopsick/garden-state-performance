@@ -137,7 +137,7 @@ export default function Home() {
                         height: "875px"
                     }}
                 >
-                    <h1 className={classes.sectionHeader}>What Do the People Think of GSP?</h1>
+                    <h1 className='sectionHeader'>What Do the People Think of GSP?</h1>
 
                     <p className={classes.testimonialText}>
                         <em>
@@ -178,9 +178,7 @@ export default function Home() {
                     >
                         <h2>Become a Member <AddIcon /></h2>
                     </a>
-
-                    <p className='bodyText'>Join the <a className='link' target="_blank" rel="noreferrer" href="https://forms.gle/focuC3RcTgeg2TBJ6">Garden State Performance Email List <EmailIcon fontSize='small' /></a> and connect with us on social media!</p>
-   
+                    
                 </div>
 
             </div>
