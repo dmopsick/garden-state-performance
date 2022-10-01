@@ -84,5 +84,10 @@ a {
 }
 
 .redBackground {
-  background-color: #a7171a
+  background-color: #a7171a;
+}
+
+.linkNoDecoration {
+  color: rgb(0, 0, 0, 0.87);
+  text-decoration: none;
 }
