@@ -1,6 +1,5 @@
 import { makeStyles } from '@mui/styles';
-import Logo from '../logo.svg';
-import { AppBar, Toolbar, IconButton, Slide } from '@mui/material';
+import { AppBar, Toolbar, Slide } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
 import React from 'react';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
@@ -38,20 +37,6 @@ export default function Header(props) {
                         <SideNav />
                         <a className={classes.header} href ="/">
                             Garden State Performance
-                            <IconButton
-                                edge="start"
-                                aria-label="home"
-                                style={{
-                                    marginLeft: "5px"
-                                }}
-                            >
-                                <img 
-                                    style={{
-                                        height: "55px", 
-                                        width: "55px"}} 
-                                    src={Logo}
-                                    alt="Garden State Performance Logo" />
-                            </IconButton>
                         </a>
                     </Toolbar>
                 </AppBar>
