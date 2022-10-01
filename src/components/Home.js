@@ -83,10 +83,13 @@ export default function Home() {
                             
                         <ArrowDownwardIcon className={classes.movingArrow}  style={{fontSize: "96px"}} />
                     </Link>
-                
+                    
+                    <a className={classes.hoursLink} target="_blank" href="/resources/GSP-Fall-2022-Hours.pdf">
+                        Fall 2022 Hours
+                    </a>
+
                 </div>
             </div>
-        
         
             <div id="info" className='section'>
                 <h1 className='sectionHeader'>Movement. Strength. Performance.</h1> 
