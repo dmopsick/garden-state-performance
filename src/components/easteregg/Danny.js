@@ -1,4 +1,4 @@
-import DannyImage from "../../images/Danny.JPG";
+import DannyImage from '../../images/Danny.JPG';
 import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles(theme => ({
