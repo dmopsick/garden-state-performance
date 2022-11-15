@@ -58,7 +58,7 @@ export default function Merch() {
                 <li className='infoListItem'>Dri-Fit - 1 for $45, 2 for $70</li>
             </ul>
 
-            <p className='sectionCaption'>Cash, check, Venmo, CashApp, Zelle accepted by shirts. Stop in or reach out to buy.</p>
+            <p className='sectionCaption'>Cash, check, Venmo, CashApp, Zelle accepted for shirts. Stop in or reach out to buy.</p>
             
         </div>
 
