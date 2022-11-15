@@ -12,6 +12,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import MenuIcon from '@mui/icons-material/Menu';
 import ScheduleIcon from '@mui/icons-material/Schedule';
 import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
+import SellIcon from '@mui/icons-material/Sell';
 
 export default function SideNav() {
     const [state, setState] = React.useState({
@@ -87,6 +88,19 @@ export default function SideNav() {
                             </ListItemIcon>
                             <ListItemText>
                                 Hours
+                            </ListItemText>
+                        </ListItemButton>
+                    </ListItem>
+                </a>
+
+                <a className='linkNoDecoration' href="/merch">
+                    <ListItem disablePadding>
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <SellIcon />
+                            </ListItemIcon>
+                            <ListItemText>
+                                Merch
                             </ListItemText>
                         </ListItemButton>
                     </ListItem>

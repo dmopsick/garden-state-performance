@@ -6,6 +6,7 @@ import AboutGSP from './components/AboutGSP';
 import Hours from './components/Hours';
 import Programming from './components/Programming';
 import Danyell from './components/easteregg/Danny';
+import Merch from './components/Merch';
 
 export default function Router() {
   return (
@@ -16,6 +17,7 @@ export default function Router() {
         <Route path="about" element={<AboutGSP />} />
         <Route path="hours" element={<Hours />} />
         <Route path="programming" element={<Programming />} />
+        <Route path="merch" element={<Merch />} />
         <Route path="*" element={<NoMatch />} />
     </Routes>
     
