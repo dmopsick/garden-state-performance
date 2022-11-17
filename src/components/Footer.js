@@ -2,7 +2,6 @@
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import FacebookIcon from '@mui/icons-material/Facebook';
 
 export default function Footer() {
 
@@ -32,30 +31,21 @@ export default function Footer() {
                         </a>
                     </div>
                     <div className='socialIconContainer'>
-                            <a className='socialIconLink'
-                                target="_blank"
-                                rel="noreferrer" 
-                                href="https://www.youtube.com/channel/UC_PjfKHV8wfWTIinmjaHPLg">
-                                <YouTubeIcon fontSize='large' />
-                            </a>
+                        <a className='socialIconLink'
+                            target="_blank"
+                            rel="noreferrer" 
+                            href="https://www.youtube.com/channel/UC_PjfKHV8wfWTIinmjaHPLg">
+                            <YouTubeIcon fontSize='large' />
+                        </a>
                     </div>
                     <div className='socialIconContainer'>
-                            <a className='socialIconLink'
-                                target="_blank"
-                                rel="noreferrer" 
-                                href="https://www.linkedin.com/in/shane-nolan-23kb">
-                                <LinkedInIcon fontSize='large' />
-                            </a>
+                        <a className='socialIconLink'
+                            target="_blank"
+                            rel="noreferrer" 
+                            href="https://www.linkedin.com/in/shane-nolan-23kb">
+                            <LinkedInIcon fontSize='large' />
+                        </a>
                     </div>
-                    <div className='socialIconContainer'>
-                            <a className='socialIconLink'
-                                target="_blank"
-                                rel="noreferrer"
-                                href="https://www.facebook.com/Garden-State-Performance-101134245910969">
-                                <FacebookIcon fontSize='large' />
-                            </a>
-                    </div>
-
             </div>
             <hr />
             <p>

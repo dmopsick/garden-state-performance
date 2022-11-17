@@ -2,7 +2,6 @@
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import FacebookIcon from '@mui/icons-material/Facebook';
 
 export default function ContactUs() {
 
@@ -54,15 +53,7 @@ export default function ContactUs() {
                         LinkedIn<LinkedInIcon fontSize='large' />
                     </a>
                 </li>
-                <li className='infoListItem'>
-                    <a className='socialIconLink'
-                        target="_blank"
-                        rel="noreferrer"
-                        href="https://www.facebook.com/Garden-State-Performance-101134245910969">
-                        Facebook <FacebookIcon fontSize='large' />
-                    </a>
-                </li>
-                
+                 
             </ul>
         </div>
 
