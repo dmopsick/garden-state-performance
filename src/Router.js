@@ -7,6 +7,7 @@ import Hours from './components/Hours';
 import Programming from './components/Programming';
 import Danyell from './components/easteregg/Danny';
 import Merch from './components/Merch';
+import ContactUs from './components/ContactUs';
 
 export default function Router() {
   return (
@@ -18,6 +19,7 @@ export default function Router() {
         <Route path="hours" element={<Hours />} />
         <Route path="programming" element={<Programming />} />
         <Route path="merch" element={<Merch />} />
+        <Route path="contact" element={<ContactUs />} />
         <Route path="*" element={<NoMatch />} />
     </Routes>
     

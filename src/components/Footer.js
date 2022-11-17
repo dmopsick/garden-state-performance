@@ -1,25 +1,10 @@
 
-import { makeStyles } from '@mui/styles';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
-const useStyles = makeStyles(theme => ({
-
-    socialIconContainer: {
-        flexBasis: "25%",
-        textAlign: "center",
-    },
-
-    socialIconLink: {
-        color: "white"
-    }
-
-}));
-
 export default function Footer() {
-    const classes = useStyles();
 
     return(
         <div style={{
@@ -38,32 +23,32 @@ export default function Footer() {
                     margin:"auto",
                     maxWidth: "500px"
                 }}>
-                    <div className={classes.socialIconContainer}>
-                        <a className={classes.socialIconLink}
+                    <div className='socialIconContainer'>
+                        <a className='socialIconLink'
                             target="_blank"
                             rel="noreferrer" 
                             href="https://www.instagram.com/gardenstateperformance_/">
                             <InstagramIcon fontSize='large' />
                         </a>
                     </div>
-                    <div className={classes.socialIconContainer}>
-                            <a className={classes.socialIconLink}
+                    <div className='socialIconContainer'>
+                            <a className='socialIconLink'
                                 target="_blank"
                                 rel="noreferrer" 
                                 href="https://www.youtube.com/channel/UC_PjfKHV8wfWTIinmjaHPLg">
                                 <YouTubeIcon fontSize='large' />
                             </a>
                     </div>
-                    <div className={classes.socialIconContainer}>
-                            <a className={classes.socialIconLink}
+                    <div className='socialIconContainer'>
+                            <a className='socialIconLink'
                                 target="_blank"
                                 rel="noreferrer" 
                                 href="https://www.linkedin.com/in/shane-nolan-23kb">
                                 <LinkedInIcon fontSize='large' />
                             </a>
                     </div>
-                    <div className={classes.socialIconContainer}>
-                            <a className={classes.socialIconLink}
+                    <div className='socialIconContainer'>
+                            <a className='socialIconLink'
                                 target="_blank"
                                 rel="noreferrer"
                                 href="https://www.facebook.com/Garden-State-Performance-101134245910969">

@@ -92,6 +92,19 @@ a {
   text-decoration: none;
 }
 
-.center-text {
+.centerText {
   text-align: center;
+}
+
+.socialIconContainer {
+  flex-basis: 25%;
+  text-align: center;
+}
+
+.socialIconLink {
+  color: white;
+}
+
+.marginTop {
+  margin-top: 25px;
 }
