@@ -53,6 +53,7 @@ p, a, label, span, li {
   margin: auto;
   margin-top: 8px;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .section {
@@ -108,4 +109,12 @@ a {
 
 .marginTop {
   margin-top: 25px;
+}
+
+.marginBottom {
+  margin-bottom: 25px;
+}
+
+.paddingBottom {
+  padding-bottom: 55px;
 }

@@ -135,18 +135,18 @@ export default function Home() {
 
                     <p className={classes.testimonialText}>
                         <em>
-                        Great place to workout. My son is a football player who loves to workout here.
-                        Great people and awesome motivators. He has helped my son transform his body for football. 
-                        Highly recommend this place. Shane is the best!”
+                            Great place to workout. My son is a football player who loves to workout here.
+                            Great people and awesome motivators. He has helped my son transform his body for football. 
+                            Highly recommend this place. Shane is the best!”
                         </em> - Jill B. of Neptune, son Avery plays football for Red Bank Catholic
 
                     </p>
 
                     <p className={classes.testimonialText}>
                         <em>
-                        You will not be disappointed in this gym at all. All three of my kids are members here and they absolutely love it. 
-                        My oldest son is now a freshman in college on the Wrestling team lifting more than most on his team. 
-                        GSP is 100% the reason for this. The BEST, go check them out.
+                            You will not be disappointed in this gym at all. All three of my kids are members here and they absolutely love it. 
+                            My oldest son is now a freshman in college on the Wrestling team lifting more than most on his team. 
+                            GSP is 100% the reason for this. The BEST, go check them out.
                         </em> - The Levies of Neptune, all three boys are members with the oldest, Nate, wrestling Division 2 at Seton Hill University
                     </p>
 
@@ -158,9 +158,9 @@ export default function Home() {
 
                     <p className={classes.testimonialText}>
                         <em>
-                        GSP is a welcoming place designed for all levels and ages. 
-                        Work out at your own pace, increasing levels and timing each week. 
-                        Challenging while gaining endurance and strength.
+                            GSP is a welcoming place designed for all levels and ages. 
+                            Work out at your own pace, increasing levels and timing each week. 
+                            Challenging while gaining endurance and strength.
                         </em> - Tom K. of Eatontown, adult fitness client/legend
                     </p>
 
@@ -168,7 +168,6 @@ export default function Home() {
                         target="_blank" 
                         rel="noreferrer" 
                         href="https://forms.gle/26EjLbeDkoVDGhU78"
-                        className='link'
                     >
                         <h2>Become a Member <AddIcon /></h2>
                     </a>

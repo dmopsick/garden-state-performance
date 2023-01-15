@@ -6,8 +6,8 @@ import AboutGSP from './components/AboutGSP';
 import Hours from './components/Hours';
 import Programming from './components/Programming';
 import Danyell from './components/easteregg/Danny';
-import Merch from './components/Merch';
 import ContactUs from './components/ContactUs';
+import Athletes from './components/Athletes';
 
 export default function Router() {
   return (
@@ -18,8 +18,8 @@ export default function Router() {
         <Route path="about" element={<AboutGSP />} />
         <Route path="hours" element={<Hours />} />
         <Route path="programming" element={<Programming />} />
-        <Route path="merch" element={<Merch />} />
         <Route path="contact" element={<ContactUs />} />
+        <Route path="athletes" element={<Athletes />} />
         <Route path="*" element={<NoMatch />} />
     </Routes>
     
