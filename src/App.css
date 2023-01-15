@@ -99,6 +99,7 @@ a {
 .socialIconContainer {
   flex-basis: 25%;
   text-align: center;
+  margin: auto;
 }
 
 .socialIconLink {

@@ -1,7 +1,6 @@
 
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export default function ContactUs() {
 
@@ -45,15 +44,6 @@ export default function ContactUs() {
                         YouTube <YouTubeIcon fontSize='large' />
                     </a>
                 </li>
-                <li className='infoListItem'>
-                    <a className='socialIconLink'
-                        target="_blank"
-                        rel="noreferrer" 
-                        href="https://www.linkedin.com/in/shane-nolan-23kb">
-                        LinkedIn<LinkedInIcon fontSize='large' />
-                    </a>
-                </li>
-                 
             </ul>
         </div>
 
