@@ -8,6 +8,7 @@ import Programming from './components/Programming';
 import Danyell from './components/easteregg/Danny';
 import ContactUs from './components/ContactUs';
 import Athletes from './components/Athletes';
+import Adults from './components/Adults';
 
 export default function Router() {
   return (
@@ -20,6 +21,7 @@ export default function Router() {
         <Route path="programming" element={<Programming />} />
         <Route path="contact" element={<ContactUs />} />
         <Route path="athletes" element={<Athletes />} />
+        <Route path="adults" element={<Adults />} />
         <Route path="*" element={<NoMatch />} />
     </Routes>
     
