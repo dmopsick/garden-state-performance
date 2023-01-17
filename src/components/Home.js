@@ -4,6 +4,7 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import { makeStyles } from '@mui/styles';
 import AddIcon from '@mui/icons-material/Add';
 import { Link } from "react-scroll";
+import Button from '@mui/material/Button';
 
 const useStyles = makeStyles(theme => ({
     movingArrow: {
@@ -90,43 +91,58 @@ export default function Home() {
                 <h1 className='sectionHeader'>Movement. Strength. Performance.</h1> 
                 <p className='sectionCaption'>Become a better human - a better athlete - a better player</p>
                     
-                    <div style={{ 
-                        display: "flex",
-                        flexWrap: "wrap"
-                    }}>
+                    <Button className='button' 
+                        variant="contained" 
+                        size="large"
+                        href="/athletes">
+                            Athletes
+                        </Button>
+                    
+               
+                    
+                    <Button className='button'
+                        variant="contained" 
+                        size="large"
+                        href="adults">
+                            Adult Fitness
+                    </Button>
+                    
+                    <Link to="signUp"
+                        smooth={true}
+                        duration={500}
+                        style={{
+                            textDecoration: "none",
+                            color: "white"
+                        }}
+                    >
+                        <h1>Training at GSP <ArrowDownwardIcon className={classes.movingArrow} fontSize="large" /></h1>
+                    </Link>
+                </div>
 
-                        <div className='bodyText'>
-                            <h1>Training at GSP</h1>
-                            <ul className='infoList'>
-                            <li className='infoListItem'>Learn the proper movement patterns for athletic efficiency and performance</li>
-                                <li className='infoListItem'>Develop Power, Strength, and Speed for your Sport</li>
-                                <li className='infoListItem'>Explore the boundaries of your athleticism and express your full abilities</li>
-                                <li className='infoListItem'>Develop confidence and self-reliance in a competitive environment</li>
-                                <li className='infoListItem'>Become battle-tested in your off-seasons to be ready for the main event</li>
-                            </ul>
-                        </div>
-
-                        <div style={{
-                                flexBasis: "100%"
-                            }}
-                        >
-                            <Link to="signUp" 
-                                smooth={true}
-                                duration={500}
-                                style={{
-                                    textDecoration: "none",
-                                    color: "white"
-                                }}
-                            >
-                                <h1>Sign Up <ArrowDownwardIcon className={classes.movingArrow} fontSize="large" /></h1>
-                            </Link>
-
-                        </div>
-                    </div>
+                <div id="training" className='section redBackground'>
+                    <h1 className='sectionHeader'>Training at GSP</h1>
+                    <p className='sectionCaption'>How we do things</p>
+                    <ul className='infoList'>
+                        <li className='infoListItem'>Learn the proper movement patterns for athletic efficiency and performance</li>
+                        <li className='infoListItem'>Develop Power, Strength, and Speed for your sport</li>
+                        <li className='infoListItem'>Explore the boundaries of your athleticism and express your full abilities</li>
+                        <li className='infoListItem'>Develop confidence and self-reliance in a competitive environment</li>
+                        <li className='infoListItem'>Become battle-tested in your off-seasons to be ready for the main event</li>
+                    </ul>
+                    <Link to="signUp" 
+                        smooth={true}
+                        duration={500}
+                        style={{
+                            textDecoration: "none",
+                            color: "white"
+                        }}
+                    >
+                        <h1>Sign Up <ArrowDownwardIcon className={classes.movingArrow} fontSize="large" /></h1>
+                    </Link>
                 </div>
 
                 <div id="signUp"
-                    className='section redBackground'
+                    className='section'
                     style={{
                         height: "875px"
                     }}

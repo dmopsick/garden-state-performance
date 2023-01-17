@@ -57,7 +57,7 @@ p, a, label, span, li {
 }
 
 .section {
-  min-height: 850px;
+  height: 850px;
 }
 
 .longSection {
@@ -117,4 +117,10 @@ a {
 
 .paddingBottom {
   padding-bottom: 55px;
+}
+
+.button {
+  font-size: 2rem !important;
+  margin: 50px !important;
+  /* background-color: #a7171a !important; */
 }
