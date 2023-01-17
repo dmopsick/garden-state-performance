@@ -11,7 +11,7 @@ export default function Hours() {
                 <li className='infoListItem'>Tuesday: 9 - 10 a.m. &amp; 5 - 7 p.m.</li>
                 <li className='infoListItem'>Wednesday: 8 - 10 a.m. &amp; 5 - 7 p.m.</li>
                 <li className='infoListItem'>Thursday: 5 - 7 p.m.</li>
-                <li className='infoListItem'>Friday: 8 - 10 a.m. &amp; 4 - 6 p.m.</li>
+                <li className='infoListItem'>Friday: 8 - 10 a.m. &amp; 5 - 7 p.m.</li>
                 <li className='infoListItem'>Saturday: Closed</li>
             </ul>
         </div>
