@@ -107,7 +107,7 @@ export default function Home() {
                             Adult Fitness
                     </Button>
                     
-                    <Link to="signUp"
+                    <Link to="training"
                         smooth={true}
                         duration={500}
                         style={{
