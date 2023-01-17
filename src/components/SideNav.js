@@ -13,6 +13,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ScheduleIcon from '@mui/icons-material/Schedule';
 import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
+import SportsFootballIcon from '@mui/icons-material/SportsFootball';
+import DirectionsRunIcon from '@mui/icons-material/DirectionsRun';
 
 export default function SideNav() {
     const [state, setState] = React.useState({
@@ -75,6 +77,32 @@ export default function SideNav() {
                             </ListItemIcon>
                             <ListItemText>
                                 Our Programming
+                            </ListItemText>
+                        </ListItemButton>
+                    </ListItem>
+                </a>
+
+                <a className='linkNoDecoration' href="/athletes">
+                    <ListItem disablePadding>
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <SportsFootballIcon />
+                            </ListItemIcon>
+                            <ListItemText>
+                                Athletes
+                            </ListItemText>
+                        </ListItemButton>
+                    </ListItem>
+                </a>
+
+                <a className='linkNoDecoration' href="/adults">
+                    <ListItem disablePadding>
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <DirectionsRunIcon />
+                            </ListItemIcon>
+                            <ListItemText>
+                                Adult Fitness
                             </ListItemText>
                         </ListItemButton>
                     </ListItem>

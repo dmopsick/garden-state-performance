@@ -2,7 +2,7 @@
 export default function Hours() {
 
     return(
-        <div className='paddingBottom pageContainer redBackground'>
+        <div className='paddingBottom section pageContainer redBackground'>
             <h1 className='sectionHeader'>Hours</h1>
             <p className='sectionCaption'>These are the current hours unless otherwise posted on <a href="https://www.instagram.com/gardenstateperformance_/">Instagram</a>.</p>
             <ul className='infoList'>

@@ -57,7 +57,7 @@ p, a, label, span, li {
 }
 
 .section {
-  height: 850px;
+  min-height: 850px;
 }
 
 .longSection {
