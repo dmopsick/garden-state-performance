@@ -14,6 +14,12 @@ export default function Hours() {
                 <li className='infoListItem'>Friday: 8 - 10 a.m. &amp; 5 - 7 p.m.</li>
                 <li className='infoListItem'>Saturday: Closed</li>
             </ul>
+            <div className='centerText marginTop largeBodyText'>
+                <a target="_blank" rel="noreferrer" href="/resources/GSP-Winter-2023-Hours.pdf">
+                    Garden State Performance Hours PDF
+                </a>
+            </div>
+            
         </div>
 
     )

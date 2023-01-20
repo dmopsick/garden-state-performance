@@ -9,6 +9,7 @@ import Danyell from './components/easteregg/Danny';
 import ContactUs from './components/ContactUs';
 import Athletes from './components/Athletes';
 import Adults from './components/Adults';
+import Pricing from './components/Pricing';
 
 export default function Router() {
   return (
@@ -18,6 +19,7 @@ export default function Router() {
         <Route path="topsecret/epic/danny" element={<Danyell />} />
         <Route path="about" element={<AboutGSP />} />
         <Route path="hours" element={<Hours />} />
+        <Route path="pricing" element={<Pricing />} />
         <Route path="programming" element={<Programming />} />
         <Route path="contact" element={<ContactUs />} />
         <Route path="athletes" element={<Athletes />} />
