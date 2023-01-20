@@ -15,6 +15,7 @@ import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import SportsFootballIcon from '@mui/icons-material/SportsFootball';
 import DirectionsRunIcon from '@mui/icons-material/DirectionsRun';
+import RequestQuoteIcon from '@mui/icons-material/RequestQuote';
 
 export default function SideNav() {
     const [state, setState] = React.useState({
@@ -116,6 +117,19 @@ export default function SideNav() {
                             </ListItemIcon>
                             <ListItemText>
                                 Hours
+                            </ListItemText>
+                        </ListItemButton>
+                    </ListItem>
+                </a>
+
+                <a className='linkNoDecoration' href="/pricing">
+                    <ListItem disablePadding>
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <RequestQuoteIcon />
+                            </ListItemIcon>
+                            <ListItemText>
+                                Pricing
                             </ListItemText>
                         </ListItemButton>
                     </ListItem>

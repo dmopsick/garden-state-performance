@@ -5,6 +5,15 @@ export default function Adults() {
         <div className='pageContainer redBackground'>
             <div className='paddingBottom'>
             <h1 className='sectionHeader'>Adult Fitness</h1>
+                <a 
+                    target="_blank" 
+                    rel="noreferrer" 
+                    href="https://forms.gle/BPRZMMSrt8LNPsgH7 "
+                    className='centerText'
+                >
+                    <h2>Join Garden State Performance <AddIcon /></h2>
+                </a>
+
                 <p className='largeBodyText'>
                     Being a healthy, fully realized adult is simple.
                     <br/><br/>
@@ -48,10 +57,10 @@ export default function Adults() {
                 <a 
                     target="_blank" 
                     rel="noreferrer" 
-                    href="https://forms.gle/26EjLbeDkoVDGhU78"
+                    href="https://forms.gle/BPRZMMSrt8LNPsgH7 "
                     className='centerText'
                 >
-                    <h2>Become a Member <AddIcon /></h2>
+                    <h2>Join Garden State Performance <AddIcon /></h2>
                 </a>
 
             </div>

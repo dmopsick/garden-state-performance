@@ -6,6 +6,14 @@ export default function Athletes() {
         <div className='pageContainer redBackground'>
             <div className='paddingBottom'>
                 <h1 className='sectionHeader'>Athletes</h1>
+                <a 
+                    target="_blank" 
+                    rel="noreferrer" 
+                    href="https://forms.gle/HtDgdFHq6pn87mHm7"
+                    className='centerText'
+                >
+                    <h2>Join Garden State Performance <AddIcon /></h2>
+                </a>
                 <p className='sectionCaption'>Strength. Speed. Power. Agility.</p>
                 <p className='largeBodyText'>
                     These are all phenomenal athletic qualities. The kind of qualities that can be trained and honed in hard, diligent off-seasons. 
@@ -37,10 +45,10 @@ export default function Athletes() {
                 <a 
                     target="_blank" 
                     rel="noreferrer" 
-                    href="https://forms.gle/26EjLbeDkoVDGhU78"
+                    href="https://forms.gle/HtDgdFHq6pn87mHm7"
                     className='centerText'
                 >
-                    <h2>Become a Member <AddIcon /></h2>
+                    <h2>Join Garden State Performance <AddIcon /></h2>
                 </a>
 
             </div>
