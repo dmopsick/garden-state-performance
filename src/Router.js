@@ -19,7 +19,7 @@ export default function Router() {
         <Route path="topsecret/epic/danny" element={<Danyell />} />
         <Route path="about" element={<AboutGSP />} />
         <Route path="hours" element={<Hours />} />
-        <Route path="pricing" element={<Pricing />} />
+        {/* <Route path="pricing" element={<Pricing />} /> */}
         <Route path="programming" element={<Programming />} />
         <Route path="contact" element={<ContactUs />} />
         <Route path="athletes" element={<Athletes />} />

@@ -122,7 +122,7 @@ export default function SideNav() {
                     </ListItem>
                 </a>
 
-                <a className='linkNoDecoration' href="/pricing">
+                {/* <a className='linkNoDecoration' href="/pricing">
                     <ListItem disablePadding>
                         <ListItemButton>
                             <ListItemIcon>
@@ -133,7 +133,7 @@ export default function SideNav() {
                             </ListItemText>
                         </ListItemButton>
                     </ListItem>
-                </a>
+                </a> */}
 
                 <a className='linkNoDecoration' href="/contact">
                     <ListItem disablePadding>
