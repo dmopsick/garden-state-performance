@@ -9,7 +9,7 @@ import Danyell from './components/easteregg/Danny';
 import ContactUs from './components/ContactUs';
 import Athletes from './components/Athletes';
 import Adults from './components/Adults';
-import Pricing from './components/Pricing';
+// import Pricing from './components/Pricing';
 
 export default function Router() {
   return (
