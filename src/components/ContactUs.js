@@ -32,7 +32,7 @@ export default function ContactUs() {
                     <a className='socialIconLink'
                         target="_blank"
                         rel="noreferrer" 
-                        href="https://www.instagram.com/gardenstateperformance_/">
+                        href="https://www.instagram.com/shanenolan_/">
                         Instagram<InstagramIcon fontSize='large' />
                     </a>
                 </li>

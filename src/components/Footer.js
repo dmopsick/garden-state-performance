@@ -25,7 +25,7 @@ export default function Footer() {
                         <a className='socialIconLink'
                             target="_blank"
                             rel="noreferrer" 
-                            href="https://www.instagram.com/gardenstateperformance_/">
+                            href="https://www.instagram.com/shanenolan_/">
                             <InstagramIcon fontSize='large' />
                         </a>
                     </div>
